@@ -1,0 +1,369 @@
+/* Generales */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E6F4F1;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+p{
+    padding: 5px;
+    text-align: justify;
+
+}
+
+.btn{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.icons{
+    object-fit: contain;
+    padding: 5px;
+}
+
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% auto 15%;
+}
+
+/* HEADER */
+
+.flex-header{
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER - BARRA DE LOGUEO */
+
+.nav-log{
+    background-color: #96C5F7;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+/* HEADER - BARRA DE PAGINAS */
+
+.flex-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navbar{
+    background-color: #61DBFF;
+}
+
+/* FOOTER */
+
+.flex-footer{
+    background-color: #61DBFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left, .footer-rigth{
+    display: flex;
+    margin: 10px;
+}
+
+.social-networks, .shipping-forms, .contact{
+    margin: 10px;
+}
+
+.contact a{
+    display: flex;
+    align-items: center;
+}
+
+.contact span{
+    margin: 5px;
+}
+
+.social-networks img, .shipping-forms img, .extra-icon{
+    margin: 5px;
+}
+
+/* MAIN INDEX CON BOOTSTRAP */
+
+.card{
+    margin: 20px;
+}
+
+.card .btn{
+    width: 90%;
+}
+
+.btn-toolbar{
+    display: flex;
+    justify-content: center;
+}
+
+.toast-header{
+    background-color: rgba(0, 255, 255, 0.413);
+}
+
+/* MAIN BUSQUEDA CON BOOTSTRAP */
+
+.form-control{
+    width: 80vw;
+}
+
+.main-busqueda{
+    margin-top: 5px;
+}
+
+/* MAIN CARRITO DE COMPRAS */
+
+.main-carrito-de-compras{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-info-products{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-product{
+    object-fit: contain;
+}
+
+.box-body-product{
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-info-product{
+    display: flex;
+    width: 50%;
+}
+
+.info-product{
+    margin: 20px;
+}
+
+.info-shop-product{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cant-product input{
+    width: 100px;
+}
+
+.nav-shop{
+    text-align: end;
+    margin: 30px;
+}
+
+.nav-shop li{
+    padding: 10px;
+}
+
+/* NOSOTROS.HTML CON GRID */
+
+/* Menu usuario Header*/
+
+.bar-log{
+    background-color: #96C5F7;
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+
+.menu-user ul{
+    display: flex;
+}
+
+.menu-user li{
+    margin: 5px;
+}
+
+/* Menu de navegación de páginas Header*/
+
+.bar-pages{
+    background-color: #61DBFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-pages ul{
+    display: flex;
+}
+
+.bar-pages li{
+    margin: 10px;
+}
+
+.bar-pages-left{
+    display: flex;
+    align-items: center;
+}
+
+.bar-pages-rigth{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.bar-pages-rigth img{
+    margin: 10px;
+}
+
+.grid-main-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 3fr 2fr 2fr 2fr;
+    grid-template-areas:
+        "nav info-contact"
+        "nav info-delivery"
+        "nav info-payment-methods"
+        "nav info-store";
+}
+
+.nav-info-nosotros{
+    grid-area: nav;
+    background-color: blueviolet;
+}
+
+.info-nosotros{
+    background-color: brown;
+}
+
+.info-contact{
+    grid-area: info-contact;
+    background-color: cadetblue;
+}
+
+.info-delivery{
+    grid-area: info-delivery;
+    background-color: chartreuse;
+}
+
+.info-payment-methods{
+    grid-area: info-payment-methods;
+    background-color: chocolate;
+}
+
+.info-store{
+    grid-area: info-store;
+    background-color: cornflowerblue;
+}
+
+/* Pie de página */
+
+footer{
+    background-color: #61DBFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left, .footer-rigth{
+    display: flex;
+    margin: 10px;
+}
+
+.social-networks, .shipping-forms, .contact{
+    margin: 10px;
+}
+
+.contact a{
+    display: flex;
+    align-items: center;
+}
+
+.contact span{
+    margin: 5px;
+}
+
+.social-networks img, .shipping-forms img, .extra-icon{
+    margin: 5px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:667px){
+    .occult{
+        display: none;
+    }
+
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-log{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-networks{
+        margin: 10px 0px 0px 0px;
+    } 
+    
+    .shipping-forms{
+        margin: 0px;
+    }
+
+    .box-body-product{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body-info-product{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-shop-product{
+        width: 80%;
+        display: flex;
+    }
+}
+
+@media(min-width:667px) and (max-width:1000px){
+    .box-info-product{
+        margin: 0px;
+    }
+
+    .info-shop-product{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .body-info-product{
+        width: 80%;
+    }
+
+}

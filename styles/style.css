@@ -20,9 +20,14 @@ li{
 }
 
 p{
+    margin: 10px;
     padding: 5px;
     text-align: justify;
 
+}
+
+h1{
+    margin: 10px;
 }
 
 .btn{
@@ -190,7 +195,7 @@ p{
 
 /* NOSOTROS.HTML CON GRID */
 
-/* Menu usuario Header*/
+/* Menu usuario HEADER*/
 
 .bar-log{
     background-color: #96C5F7;
@@ -207,7 +212,7 @@ p{
     margin: 5px;
 }
 
-/* Menu de navegación de páginas Header*/
+/* Menu de navegación de páginas HEADER*/
 
 .bar-pages{
     background-color: #61DBFF;
@@ -239,6 +244,8 @@ p{
     margin: 10px;
 }
 
+/* MAIN */
+
 .grid-main-nosotros{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -252,16 +259,68 @@ p{
 
 .nav-info-nosotros{
     grid-area: nav;
+    padding-top: 20px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
     background-color: blueviolet;
-}
-
-.info-nosotros{
-    background-color: brown;
 }
 
 .info-contact{
     grid-area: info-contact;
+    padding: 30px;
+    font-size: x-large;
     background-color: cadetblue;
+}
+
+.icon-text{
+    display: flex;
+    align-items: center;
+}
+
+.icon-text-data{
+    padding: 0px 0px 0px 20px;
+    margin: 0px;
+}
+
+.icon-text a{
+    display: flex;
+    align-items: center;
+}
+
+.formulario-consultas{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.label-form{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-inputs{
+    width: 80%;
+    border-radius: 5px;
+    background-color: rgba(249, 249, 249, 0.674);
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.button-input{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    font-size: large;
+    font-family: sans-serif;
+    color: azure;
+    background-color:#0b5ed7;
 }
 
 .info-delivery{
@@ -279,7 +338,7 @@ p{
     background-color: cornflowerblue;
 }
 
-/* Pie de página */
+/* FOOTER NOSOTROS */
 
 footer{
     background-color: #61DBFF;
@@ -311,7 +370,7 @@ footer{
 
 /* RESPONSIVE */
 
-@media(max-width:667px){
+@media(max-width:700px){
     .occult{
         display: none;
     }
@@ -350,7 +409,7 @@ footer{
     }
 }
 
-@media(min-width:667px) and (max-width:1000px){
+@media(min-width:700px) and (max-width:1000px){
     .box-info-product{
         margin: 0px;
     }

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear usuario</title>
+    <title>Ingresar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,125 +12,142 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Usuario -->
-        <div class="bar-log">
-            <!-- Logo de usuario -->
-            <img class="icons" src="../images/icons/usuario-de-perfil.png" alt="Img usuario">
-            <!-- Menú de usuario -->
-            <nav class="menu-user">
-                <ul>
-                    <li><a href="./crear_usuario.html">Crear cuenta</a></li>
-                    <li><a href="./ingresar_usuario.html">Iniciar sesión</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- Navegador de páginas -->
-        <div class="bar-pages">
-            <div class="bar-pages-left">
-                <!-- Logo -->
-                <a href="../index.html">
-                    <img class="logo" src="../images/icons/logo.png" alt="Logo principal">
-                </a>
-                <!-- Menú navegable -->
-                <nav class="menu-pages">
-                    <ul>
-                        <li><a href="../index.html">INICIO</a></li>
-                        <li><a href="./nosotros.html">NOSOTROS</a></li>
-                        <li><a href="./como_comprar.html">CÓMO COMPRAR</a></li>
+    <div class="grid-container">
+        <header>
+            <div class="flex-header" id="header">
+                <!-- Barra de navegación de usuario -->
+                <nav class="nav-log">
+                    <!-- Logo de usuario -->
+                    <img class="icons" src="../images/icons/usuario-de-perfil.png" alt="Img usuario">
+                    <!-- Menú de usuario -->
+                    <ul class="menu-user">
+                        <li><a href="./crear_usuario.html">Crear cuenta</a></li>
+                        <li><a href="./ingresar_usuario.html">Iniciar sesión</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div class="bar-pages-rigth">
-                <a href="./busqueda.html">
-                    <img src="../images/icons/lupa.png" alt="magnifying-glass-icon">
-                </a>
-                <a href="./carrito_de_compra.html">
-                    <img src="../images/icons/carrito-de-compras.png" alt="shopping-cart-icon">
-                </a>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class = "form-user">
-            <!-- Título principal -->
-            <h1 id = "principal-tittle">CREAR USUARIO</h1>
-            <!-- Logo -->
-            <img src="../images/icons/logo.png" alt="icon-logo">
-            <!-- Formulario para la creación y alta de usuario -->
-            <form action="">
-                <label for="nombre">Nombre de usuario:</label>
-                <input type="text" placeholder="Ingrese nombre de usuario" name="nombre">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" placeholder="Ingrese un email" required name="email">
-                <br>
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" placeholder="Ingrese una contraseña" required name="contraseña">
-                <br>
-                <label for="confirmar-contraseña">Confirmar contraseña:</label>
-                <input type="password" placeholder="Repita contraseña" required name="confirmar-contraseña">
-                <br>
-                <input class="button-user" type="reset" value="limpiar campos">
-                <input class="button-user" type="submit" value="crear">
-            </form>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-left">
-            <!-- Redes sociales -->
-            <div class="social-networks">
-                <h3>REDES</h3>
-                <a href="./nosotros.html#info-contact">
-                    <img src="../images/icons/facebook.png" alt="facebook-icon">
-                </a>
-                <a href="./nosotros.html#info-contact">
-                    <img src="../images/icons/instagram.png" alt="instagram-icon">
-                </a>
-            </div>
-            <!-- Formas de entrega -->
-            <div class="shipping-forms">
-                <h3>FORMAS DE ENVÍO</h3>
-                <a href="./nosotros.html#info-store">
-                    <img src="../images/icons/tienda.png" alt="store-icon">
-                </a>
-                <a href="./nosotros.html#info-delivery">
-                    <img src="../images/icons/furgoneta-de-reparto.png" alt="delivery-icon">
-                </a>
-            </div>            
-        </div>
-        <div class="footer-rigth">
-            <!-- Tarjeta de contacto -->
-            <div class="contact">
-                <h3>CONTACTANOS</h3>
-                <ul>
-                    <li>
-                        <a href="./nosotros.html#info-contact">
-                            <img src="../images/icons/telefono.png" alt="phone-icon">
-                            <span>11-5555-5555</span>
+                <!-- Barra de navegación de páginas -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../images/icons/logo.png" alt="logo-icon">
                         </a>
-                    </li>
-                    <li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="./como_comprar.html">CÓMO COMPRAR</a>
+                            </li>
+                            </ul>
+                            <div class="d-flex" role="search">
+                                <a href="./busqueda.html">
+                                    <img src="../images/icons/lupa.png" alt="magnifying-glass-icon">
+                                </a>
+                                <a href="./carrito_de_compra.html">
+                                    <img src="../images/icons/carrito-de-compras.png" alt="shopping-cart-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-login">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control label-log" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                        <input type="email" class="form-control label-log" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Debe estar compuesto por números y letras</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control label-log" id="exampleInputPassword1">
+                        <div id="emailHelp" class="form-text">Debe contener más de 8 caracteres</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Repita contraseña</label>
+                        <input type="password" class="form-control label-log" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                  </form>
+            </div>
+        </main>
+        <footer>
+            <div class="flex-footer">
+                <div class="footer-left">
+                    <!-- Redes sociales -->
+                    <div class="social-networks">
+                        <h3 class="occult">REDES</h3>
                         <a href="./nosotros.html#info-contact">
-                            <img src="../images/icons/correo-electronico.png" alt="email-icon">
-                            <span>correofalso@123.com</span>
+                            <img src="../images/icons/facebook.png" alt="facebook-icon">
                         </a>
-                    </li>
-                    <li>
+                        <a href="./nosotros.html#info-contact">
+                            <img src="../images/icons/instagram.png" alt="instagram-icon">
+                        </a>
+                    </div>
+                    <!-- Formas de entrega -->
+                    <div class="shipping-forms">
+                        <h3 class="occult">FORMAS DE ENVÍO</h3>
                         <a href="./nosotros.html#info-store">
-                            <img src="../images/icons/ubicacion.png" alt="map-icon">
-                            <span>correofalso@123.com</span>
+                            <img src="../images/icons/tienda.png" alt="store-icon">
                         </a>
-                    </li>
-                </ul>
+                        <a href="./nosotros.html#info-store">
+                            <img src="../images/icons/furgoneta-de-reparto.png" alt="delivery-icon">
+                        </a>
+                    </div>            
+                </div>
+                <div class="footer-rigth">
+                    <!-- Tarjeta de contacto -->
+                    <div class="contact">
+                        <h3 class="occult">CONTACTANOS</h3>
+                        <ul>
+                            <li>
+                                <a href="./nosotros.html#info-contact">
+                                    <img src="../images/icons/telefono.png" alt="phone-icon">
+                                    <span>11-5555-5555</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./nosotros.html#info-contact">
+                                    <img src="../images/icons/correo-electronico.png" alt="email-icon">
+                                    <span>correofalso@123.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./nosotros.html#info-store">
+                                    <img src="../images/icons/ubicacion.png" alt="map-icon">
+                                    <span>correofalso@123.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="occult" href="#header">
+                        <img class="extra-icon" src="../images/icons/flecha-hacia-arriba.png" alt="up-icon">
+                    </a>
+                    <a class="occult" href="#">
+                        <img class="extra-icon" src="../images/icons/whatsapp.png" alt="whatsapp-icon">
+                    </a>
+                </div>
             </div>
-            <a href="#principal-tittle">
-                <img class="extra-icon" src="../images/icons/flecha-hacia-arriba.png" alt="up-icon">
-            </a>
-            <a href="#">
-                <img class="extra-icon" src="../images/icons/whatsapp.png" alt="whatsapp-icon">
-            </a>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

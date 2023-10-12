@@ -44,7 +44,7 @@ h1{
 .grid-container{
     height: 100vh;
     display: grid;
-    grid-template-rows: 20% auto 15%;
+    grid-template-rows: 20% auto 25%;
 }
 
 /* HEADER */
@@ -249,7 +249,7 @@ h1{
 .grid-main-nosotros{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 3fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 1fr 2fr;
     grid-template-areas:
         "nav info-contact"
         "nav info-delivery"
@@ -263,14 +263,12 @@ h1{
     font-size: x-large;
     display: flex;
     justify-content: center;
-    background-color: blueviolet;
 }
 
 .info-contact{
     grid-area: info-contact;
     padding: 30px;
     font-size: x-large;
-    background-color: cadetblue;
 }
 
 .icon-text{
@@ -325,17 +323,32 @@ h1{
 
 .info-delivery{
     grid-area: info-delivery;
-    background-color: chartreuse;
+    padding: 30px;
+    font-size: x-large;
 }
 
 .info-payment-methods{
     grid-area: info-payment-methods;
-    background-color: chocolate;
+    padding: 30px;
+    font-size: x-large;
 }
 
 .info-store{
     grid-area: info-store;
-    background-color: cornflowerblue;
+    padding: 30px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-info-store{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iframe-map{
+    margin: 20px;
 }
 
 /* FOOTER NOSOTROS */
@@ -370,7 +383,12 @@ footer{
 
 /* RESPONSIVE */
 
-@media(max-width:700px){
+@media(max-width:800px){
+
+    *{
+        font-size: xx-large;
+    }
+
     .occult{
         display: none;
     }
@@ -407,9 +425,44 @@ footer{
         width: 80%;
         display: flex;
     }
+
+    /* FOOTER NAV NOSOTROS.HTML */
+
+    .bar-pages{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 30% auto 30%;
+    }
+    /* MAIN - NOSOTROS.HTML */
+    .grid-main-nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-info-nosotros{
+        display: none;
+    }
+
+    .conjunto-redes{
+        display: flex;
+    }
+
+    .label-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .no-separar{
+        white-space: nowrap;
+    }
 }
 
-@media(min-width:700px) and (max-width:1000px){
+@media(min-width:800px) and (max-width:1000px){
     .box-info-product{
         margin: 0px;
     }

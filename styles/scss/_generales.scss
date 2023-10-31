@@ -1,0 +1,43 @@
+body{
+    background-image:linear-gradient(to bottom right, #61DBFF, #A3579E)
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+p{
+    margin: 10px;
+    padding: 5px;
+    text-align: justify;
+
+}
+
+.btn{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.icons{
+    object-fit: contain;
+    padding: 5px;
+}
+
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% auto 25%;
+}
+
+/* MAIN COMO COMPRAR */
+
+.main-info-shop{
+    margin: 20px;
+    padding: 20px;
+}

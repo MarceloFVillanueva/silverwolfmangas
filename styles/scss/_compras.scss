@@ -1,0 +1,52 @@
+
+/* MAIN CARRITO DE COMPRAS */
+
+.main-carrito-de-compras{
+    width: 100vw;
+    @include display-flex(column);
+}
+
+.box-info-products{
+    @include display-flex(column);
+}
+
+.img-product{
+    object-fit: contain;
+}
+
+.box-body-product{
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-info-product{
+    display: flex;
+    width: 50%;
+}
+
+.info-product{
+    margin: 20px;
+}
+
+.info-shop-product{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cant-product input{
+    width: 100px;
+}
+
+.nav-shop{
+    text-align: end;
+    margin: 30px;
+}
+
+.nav-shop li{
+    padding: 10px;
+}

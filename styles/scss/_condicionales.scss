@@ -1,0 +1,113 @@
+$vista: mobile;
+$h3Desktop: 2rem;
+$h3Mobile: 1rem;
+$h1Desktop: 3rem;
+$h1Mobile: 1.5rem;
+
+body{
+    @if $vista == desktop {
+        @media only screen and (min-width: 1024px){
+            h1{
+                font-size: $h1Desktop;
+            }
+
+            h3{
+                font-size: $h3Desktop;
+            }
+        }
+    } @else if $vista == mobile {
+        @media only screen and (max-width: 767px){
+
+            h1{
+                font-size: $h1Mobile;
+            }
+            
+            h3{
+                font-size: $h3Mobile;
+                font-family: "Courier New", 'Courier New', Courier, monospace;
+            }
+
+            .occult{
+                display: none;
+            }
+
+            .flex-footer{
+                // display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact{
+                ul{
+                    li{
+                        span{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            .grid-main-nosotros{
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .nav-info-nosotros{
+                display: none;
+            }
+        
+            .conjunto-redes{
+                display: flex;
+            }
+        
+            .label-form{
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .no-separar{
+                white-space: nowrap;
+            }
+
+            .nav-log{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .social-networks{
+                margin: 0px;
+            } 
+            
+            .shipping-forms{
+                margin: 0px;
+            }
+
+            .box-body-product{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .body-info-product{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .info-shop-product{
+                width: 80%;
+                display: flex;
+            }
+
+            .flex-main{
+                margin: 20px;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+    } @else {
+        h3{
+            font-size: 1rem;
+        }
+    }
+} 

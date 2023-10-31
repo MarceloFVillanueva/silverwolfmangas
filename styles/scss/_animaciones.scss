@@ -1,0 +1,23 @@
+.animacion-logo{
+    animation-name: aparecer-logo;
+    animation-duration: 3s;
+
+}
+
+@keyframes aparecer-logo {
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}

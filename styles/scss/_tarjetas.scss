@@ -1,0 +1,11 @@
+.card{
+    margin: 20px;
+
+    .btn{
+        width: 90%;
+    }
+
+    &:hover{
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,155 @@
+
+/* NOSOTROS.HTML CON GRID */
+
+/* Menu usuario HEADER*/
+
+.bar-log{
+    background-color: map-get($colores, color-principal);
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+
+.menu-user ul{
+    display: flex;
+}
+
+.menu-user li{
+    margin: 5px;
+}
+
+/* Menu de navegación de páginas HEADER*/
+
+.bar-pages{
+    background-color: #61DBFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-pages ul{
+    display: flex;
+}
+
+.bar-pages li{
+    margin: 10px;
+}
+
+.bar-pages-left{
+    display: flex;
+    align-items: center;
+}
+
+.bar-pages-rigth{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.bar-pages-rigth img{
+    margin: 10px;
+}
+
+/* MAIN */
+
+.grid-main-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 2fr 1fr 2fr;
+    grid-template-areas:
+        "nav info-contact"
+        "nav info-delivery"
+        "nav info-payment-methods"
+        "nav info-store";
+}
+
+.nav-info-nosotros{
+    grid-area: nav;
+    padding-top: 20px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.info-contact{
+    grid-area: info-contact;
+    padding: 30px;
+    font-size: x-large;
+}
+
+.icon-text{
+    display: flex;
+    align-items: center;
+}
+
+.icon-text-data{
+    padding: 0px 0px 0px 20px;
+    margin: 0px;
+}
+
+.icon-text a{
+    display: flex;
+    align-items: center;
+}
+
+.formulario-consultas{
+    @include display-flex(column);
+    margin: 10px;
+}
+
+.label-form{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-inputs{
+    width: 80%;
+    border-radius: 5px;
+    background-color: rgba(249, 249, 249, 0.674);
+}
+
+.buttons-form{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.button-input{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    font-size: large;
+    font-family: sans-serif;
+    color: azure;
+    background-color:#0b5ed7;
+}
+
+.info-delivery{
+    grid-area: info-delivery;
+    padding: 30px;
+    font-size: x-large;
+}
+
+.info-payment-methods{
+    grid-area: info-payment-methods;
+    padding: 30px;
+    font-size: x-large;
+}
+
+.info-store{
+    grid-area: info-store;
+    padding: 30px;
+    font-size: x-large;
+    @include display-flex(column);
+}
+
+.body-info-store{
+    @include display-flex(column);
+    align-items: center;
+}
+
+.iframe-map{
+    margin: 20px;
+}

@@ -1,0 +1,64 @@
+
+.flex-footer{
+    width: 100vw;
+    background-color: #61DBFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-networks, .shipping-forms, .contact{
+    margin: 10px;
+}
+
+.contact a{
+    display: flex;
+    align-items: center;
+}
+
+.contact span{
+    margin: 5px;
+}
+
+.social-networks img, .shipping-forms img, .extra-icon{
+    margin: 5px;
+}
+
+.bar-pages{
+    @include display-flex(column);
+}
+
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 30% auto 30%;
+}
+
+/* FOOTER NOSOTROS */
+
+footer{
+    background-color: #61DBFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left, .footer-rigth{
+    display: flex;
+    margin: 10px;
+}
+
+.social-networks, .shipping-forms, .contact{
+    margin: 10px;
+}
+
+.contact a{
+    display: flex;
+    align-items: center;
+}
+
+.contact span{
+    margin: 5px;
+}
+
+.social-networks img, .shipping-forms img, .extra-icon{
+    margin: 5px;
+}

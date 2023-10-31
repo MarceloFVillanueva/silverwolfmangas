@@ -1,0 +1,23 @@
+.flex-header{
+    @include display-flex(column);
+    background-color: #61DBFF;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #a3579e85;
+
+    .nav-log{
+        background-color: map-get($colores, color-secundario);
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        margin-top: 5px;
+        box-shadow: 10px 5px 5px #a4336a5b;
+    }
+    
+    .menu-user{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+}

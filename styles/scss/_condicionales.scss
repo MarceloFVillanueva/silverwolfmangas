@@ -1,8 +1,8 @@
 $vista: mobile;
 $h3Desktop: 2rem;
-$h3Mobile: 1rem;
+$h3Mobile: 1.5rem;
 $h1Desktop: 3rem;
-$h1Mobile: 1.5rem;
+$h1Mobile: 2rem;
 
 body{
     @if $vista == desktop {
@@ -24,6 +24,9 @@ body{
             
             h3{
                 font-size: $h3Mobile;
+            }
+
+            p{
                 font-family: "Courier New", 'Courier New', Courier, monospace;
             }
 
@@ -47,9 +50,15 @@ body{
                 }
             }
 
-            .grid-main-nosotros{
+            .informacion-nosotros{
                 display: flex;
                 flex-direction: column;
+                width: 100vw;
+
+
+                .iframe-map{
+                    height: 300px;
+                }
             }
         
             .nav-info-nosotros{

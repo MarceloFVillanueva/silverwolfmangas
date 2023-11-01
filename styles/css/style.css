@@ -1,10 +1,11 @@
-@charset "UTF-8";
 @media only screen and (max-width: 767px) {
   body h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   body h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+  body p {
     font-family: "Courier New", "Courier New", Courier, monospace;
   }
   body .occult {
@@ -17,9 +18,13 @@
   body .contact ul li span {
     font-size: 1.5rem;
   }
-  body .grid-main-nosotros {
+  body .informacion-nosotros {
     display: flex;
     flex-direction: column;
+    width: 100vw;
+  }
+  body .informacion-nosotros .iframe-map {
+    height: 300px;
   }
   body .nav-info-nosotros {
     display: none;
@@ -93,7 +98,7 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom right, #61DBFF, #A3579E);
+  background-image: linear-gradient(to bottom left, #61DBFF, #A3579E);
 }
 
 a {
@@ -255,74 +260,31 @@ footer {
   width: 50vw;
 }
 
-/* NOSOTROS.HTML CON GRID */
-/* Menu usuario HEADER*/
-.bar-log {
-  background-color: #61DBFF;
+/* MAIN NOSOTROS*/
+.main-nosotros {
   display: flex;
-  justify-content: end;
-  padding: 5px;
-}
-
-.menu-user ul {
-  display: flex;
-}
-
-.menu-user li {
-  margin: 5px;
-}
-
-/* Menu de navegación de páginas HEADER*/
-.bar-pages {
-  background-color: #61DBFF;
-  display: flex;
-  justify-content: space-between;
-}
-
-.bar-pages ul {
-  display: flex;
-}
-
-.bar-pages li {
-  margin: 10px;
-}
-
-.bar-pages-left {
-  display: flex;
-  align-items: center;
-}
-
-.bar-pages-rigth {
-  display: flex;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.bar-pages-rigth img {
-  margin: 10px;
-}
-
-/* MAIN */
-.grid-main-nosotros {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 2fr 2fr 1fr 2fr;
-  grid-template-areas: "nav info-contact" "nav info-delivery" "nav info-payment-methods" "nav info-store";
+  flex-direction: row;
+  width: 100vw;
 }
 
 .nav-info-nosotros {
-  grid-area: nav;
-  padding-top: 20px;
-  font-size: x-large;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+}
+.nav-info-nosotros a {
+  font-size: 1.5rem;
+}
+
+.informacion-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
 }
 
 .info-contact {
-  grid-area: info-contact;
   padding: 30px;
-  font-size: x-large;
 }
 
 .icon-text {
@@ -376,19 +338,16 @@ footer {
 }
 
 .info-delivery {
-  grid-area: info-delivery;
   padding: 30px;
   font-size: x-large;
 }
 
 .info-payment-methods {
-  grid-area: info-payment-methods;
   padding: 30px;
   font-size: x-large;
 }
 
 .info-store {
-  grid-area: info-store;
   padding: 30px;
   font-size: x-large;
   display: flex;

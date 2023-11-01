@@ -1,80 +1,27 @@
+/* MAIN NOSOTROS*/
 
-/* NOSOTROS.HTML CON GRID */
-
-/* Menu usuario HEADER*/
-
-.bar-log{
-    background-color: map-get($colores, color-principal);
-    display: flex;
-    justify-content: end;
-    padding: 5px;
-}
-
-.menu-user ul{
-    display: flex;
-}
-
-.menu-user li{
-    margin: 5px;
-}
-
-/* Menu de navegación de páginas HEADER*/
-
-.bar-pages{
-    background-color: #61DBFF;
-    display: flex;
-    justify-content: space-between;
-}
-
-.bar-pages ul{
-    display: flex;
-}
-
-.bar-pages li{
-    margin: 10px;
-}
-
-.bar-pages-left{
-    display: flex;
-    align-items: center;
-}
-
-.bar-pages-rigth{
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-}
-
-.bar-pages-rigth img{
-    margin: 10px;
-}
-
-/* MAIN */
-
-.grid-main-nosotros{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 2fr 2fr 1fr 2fr;
-    grid-template-areas:
-        "nav info-contact"
-        "nav info-delivery"
-        "nav info-payment-methods"
-        "nav info-store";
+.main-nosotros{
+    @include display-flex(row);
+    width: 100vw
 }
 
 .nav-info-nosotros{
-    grid-area: nav;
-    padding-top: 20px;
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
+    @include display-flex(column);
+    width: 20%;
+
+    a{
+        font-size: 1.5rem;
+    }
+}
+
+.informacion-nosotros{
+    @include display-flex(column);
+    align-items: center;
+    width: 80%;
 }
 
 .info-contact{
-    grid-area: info-contact;
     padding: 30px;
-    font-size: x-large;
 }
 
 .icon-text{
@@ -127,19 +74,16 @@
 }
 
 .info-delivery{
-    grid-area: info-delivery;
     padding: 30px;
     font-size: x-large;
 }
 
 .info-payment-methods{
-    grid-area: info-payment-methods;
     padding: 30px;
     font-size: x-large;
 }
 
 .info-store{
-    grid-area: info-store;
     padding: 30px;
     font-size: x-large;
     @include display-flex(column);

@@ -67,29 +67,30 @@
     padding: 5px;
     border-radius: 5px;
     width: 150px;
-    font-size: large;
+    font-size: 1.5rem;
     font-family: sans-serif;
     color: azure;
     background-color:#0b5ed7;
 }
 
 .info-delivery{
+    font-size: 1.5rem;
     padding: 30px;
-    font-size: x-large;
 }
 
 .info-payment-methods{
     padding: 30px;
-    font-size: x-large;
+    font-size: 1.5rem;
 }
 
 .info-store{
     padding: 30px;
-    font-size: x-large;
+    font-size: 1.5rem;
     @include display-flex(column);
 }
 
 .body-info-store{
+    font-size: 1.5rem;
     @include display-flex(column);
     align-items: center;
 }

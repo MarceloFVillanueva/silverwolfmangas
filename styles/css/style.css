@@ -23,6 +23,9 @@
     flex-direction: column;
     width: 100vw;
   }
+  body .informacion-nosotros p {
+    width: max(320px, 50%);
+  }
   body .informacion-nosotros .iframe-map {
     height: 300px;
   }
@@ -279,6 +282,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 20%;
+  padding-top: 20px;
 }
 .nav-info-nosotros a {
   font-size: 1.5rem;
@@ -432,6 +436,14 @@ footer {
 
 .nav-shop li {
   padding: 10px;
+}
+
+.main-error404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */

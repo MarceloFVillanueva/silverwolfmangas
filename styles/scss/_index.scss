@@ -12,3 +12,10 @@
     justify-content: center;
 }
 
+.sticky-icons{
+    position: sticky;
+    top: 750px;
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+}

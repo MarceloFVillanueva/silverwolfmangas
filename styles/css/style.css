@@ -247,6 +247,14 @@ footer {
   justify-content: center;
 }
 
+.sticky-icons {
+  position: sticky;
+  top: 750px;
+  z-index: 1;
+  display: flex;
+  justify-content: end;
+}
+
 /* MAIN INGRESAR_USUARIO */
 .main-login {
   padding: 20px 0px 20px 20px;
@@ -331,7 +339,6 @@ footer {
   padding: 5px;
   border-radius: 5px;
   width: 150px;
-  font-size: large;
   font-family: sans-serif;
   color: azure;
   background-color: #0b5ed7;
@@ -339,17 +346,18 @@ footer {
 
 .info-delivery {
   padding: 30px;
-  font-size: x-large;
+}
+
+.table-info-delivery {
+  width: 750px;
 }
 
 .info-payment-methods {
   padding: 30px;
-  font-size: x-large;
 }
 
 .info-store {
   padding: 30px;
-  font-size: x-large;
   display: flex;
   flex-direction: column;
 }
